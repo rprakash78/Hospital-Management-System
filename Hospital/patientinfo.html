@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Patient Information</title>
+<style>	
+h1{color:blue;}
+body{
+	background-color:#afcae0;;
+}
+input
+{
+	padding:5px;
+	border-radius:4px;
+}
+input:focus
+{
+	background-color:#d6e7f5;
+}
+input[type=submit]
+{
+	background-color:blue;
+	color:white;
+	padding:5px; 
+	
+}
+.signout{float:right;}
+</style>
+</head>
+<body>
+<center>
+<p class='signout'><a href='signout.php'>Sign Out</a></p>
+<br>
+<h1>Hospital Management System</h1> 
+<h2> Patient Information </h2>
+<table cellspacing="5" cellpadding="5">
+<form action="appointment.php" method="post">
+<tr> 
+<td> Name:</td>
+<td> <input type="text" name="name" id="name" autofocus></td>
+</tr>
+<tr> 
+<td> Age:</td>
+<td> <input type="number" name="age" id="age"></td>
+</tr>
+<tr> 
+<td> Gender:</td>
+<td> <input type="radio" name="gender" id="gender" value="Male">Male <br> 
+<input type="radio" name="gender" id="gender" value="Female"> Female </td>
+
+</tr>
+<tr>
+<td> Phn: </td>
+<td> <input type="text" name="phn" id="phn" maxlength="10" ></td>
+</tr>
+<tr> 
+<td> E-mail:</td>
+<td> <input type="email" name="email" id="email"></td>
+
+</tr>
+<tr> 
+<td></td>
+<td> <input type="submit" value="submit"></td>
+</tr>
+</form>
+</table>
+</center>
+</body>
+</html>

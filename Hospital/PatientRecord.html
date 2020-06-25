@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Patient Record</title>
+<style>
+h1{color:blue;}
+body{
+	background-color:#afcae0;
+}
+input
+{
+	padding:5px;
+	border-radius:4px;
+}
+input:focus
+{
+	background-color:#d6e7f5;
+}
+input[type=submit]
+{
+	background-color:blue;
+	color:white;
+	padding:5px; 
+	
+}
+.signout{float:right;}
+</style>
+</head>
+<body>
+<center>
+<h1>Hospital Management System</h1>
+<p class='signout'><a href='signout.php'>Sign Out</a></p>
+<h2>Patient Record</h2>
+<form action="PatientRecord.php" method='get'>
+<table cellpadding='10' cellspacing='5'>
+<tr>
+<td>Patient ID</td>
+<td><input type="text" name="id"></td>
+</tr>
+<tr>
+<td>Patient Name</td>
+<td><input type="text" name="name"></td>
+</tr>
+<tr>
+<td>Gender</td>
+<td><input type="radio" name="gender" value="Male">Male
+<input type="radio" name="gender" value="Female">Female
+<input type="radio" name="gender" value="Other">Other
+</td>
+</tr>
+<tr>
+<td>Date of Birth</td>
+<td><input type="date" name='dob'>
+</tr>
+<tr>
+<td>Age</td>
+<td><input type="number" name="age"></td>
+</tr>
+<tr>
+<td>City</td>
+<td><input type="text" name='city'></td>
+</tr>
+<tr>
+<td>Phone Number</td>
+<td><input type='text' name='phno'></td>
+</tr>
+<tr>
+<td>Blood Group</td>
+<td><input type='text' name='bgrp'></td>
+</tr>
+</table>
+<input type='submit' value="Submit Data">
+</form>
+</center>
+</body>
+</html>
